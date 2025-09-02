@@ -17,11 +17,11 @@ Um tipo de dado define **qual é a natureza da informação** que será armazena
 
 Código:
 
-```c
 #include <stdio.h>
 void main (void) {
     printf("Soma = %d\n", 100-"10");
 }
+
 O que acontece ao compilar?
 O programa não compila, porque está tentando subtrair um número inteiro (100) de uma string ("10").
 
