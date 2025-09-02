@@ -1,0 +1,23 @@
+4. Tipagem Estática vs Dinâmica
+
+Diferença:
+
+Tipagem estática → os tipos das variáveis são verificados em tempo de compilação.
+
+Tipagem dinâmica → os tipos são verificados apenas em tempo de execução.
+
+Exemplos:
+
+Estática: C, C++, Java, Rust.
+
+Dinâmica: Python, JavaScript, Ruby.
+
+Por que a estática costuma ser mais rápida?
+Porque o compilador já sabe de antemão os tipos e pode otimizar o código.
+Na tipagem dinâmica, o programa precisa verificar o tipo durante a execução, o que aumenta o custo.
+
+Exemplo prático:
+
+Em C, uma soma int a = 5; int b = 10; printf("%d", a+b); é resolvida de forma direta e otimizada.
+
+Em Python, a = 5; b = 10; print(a+b) exige que o interpretador verifique o tipo de a e b em tempo de execução, aumentando o custo.
