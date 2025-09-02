@@ -1,0 +1,40 @@
+# Soluções - Tipos de Dados (Slide 3)
+
+## 1. Tipos de Dados
+
+**O que é um tipo de dados?**  
+Um tipo de dado define **qual é a natureza da informação** que será armazenada em uma variável, ou seja, que valores ela pode receber e quais operações podem ser realizadas com ela.  
+
+**Para que servem os tipos?**  
+- Garantem segurança no uso dos dados (evitam operações inválidas).  
+- Otimizam o uso da memória.  
+- Informam ao compilador como interpretar os valores.  
+- Permitem organização e clareza no código.  
+
+---
+
+## 2. Programa com erro de tipos
+
+Código:
+
+```c
+#include <stdio.h>
+void main (void) {
+    printf("Soma = %d\n", 100-"10");
+}
+O que acontece ao compilar?
+O programa não compila, porque está tentando subtrair um número inteiro (100) de uma string ("10").
+
+Tipos dos operandos:
+
+100 → tipo int
+
+"10" → tipo const char[3] (string)
+
+Mensagem de erro esperada:
+
+error: invalid operands to binary - (have 'int' and 'char *')
+
+Explicação:
+O operador - só funciona entre tipos numéricos (como int, float).
+Como "10" é uma cadeia de caracteres (string), o compilador não sabe como realizar essa subtração.
