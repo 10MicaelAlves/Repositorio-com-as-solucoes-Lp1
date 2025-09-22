@@ -1,0 +1,9 @@
+preencheA (questão 2) retorna a struct inteira por valor.
+
+preencheB (questão 3) recebe um ponteiro e preenche a struct diretamente na memória.
+
+Diferença: preencheA cria e copia, enquanto preencheB trabalha diretamente no endereço da variável.
+
+Eu prefiro ponteiros (preencheB) porque é mais eficiente em termos de memória e velocidade (evita cópia).
+
+Em programas grandes, preencheB é melhor, mas para algo simples preencheA pode ser mais legível.
